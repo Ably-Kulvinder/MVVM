@@ -1,4 +1,4 @@
-package com.journaldev.androidmvvmdatabindinglivedata.ServerUtils;
+package com.mvvm.skelton.ServerUtils;
 
 /**
  * Created by AblySoft Pvt Ltd. on 16/7/19.

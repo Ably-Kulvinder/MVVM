@@ -1,4 +1,4 @@
-package com.journaldev.androidmvvmdatabindinglivedata.common;
+package com.mvvm.skelton.common;
 
 /**
  * Created by AblySoft Pvt Ltd. on 24/7/19.

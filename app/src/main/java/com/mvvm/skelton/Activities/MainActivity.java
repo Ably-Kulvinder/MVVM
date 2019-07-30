@@ -1,4 +1,4 @@
-package com.journaldev.androidmvvmdatabindinglivedata.Activities;
+package com.mvvm.skelton.Activities;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
@@ -7,10 +7,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
-import com.journaldev.androidmvvmdatabindinglivedata.R;
-import com.journaldev.androidmvvmdatabindinglivedata.databinding.ActivityMainBinding;
-import com.journaldev.androidmvvmdatabindinglivedata.loginController.LoginViewModel;
-import com.journaldev.androidmvvmdatabindinglivedata.loginController.User;
+import com.mvvm.skelton.R;
+import com.mvvm.skelton.databinding.ActivityMainBinding;
+import com.mvvm.skelton.loginController.LoginViewModel;
+import com.mvvm.skelton.loginController.User;
 
 public class MainActivity extends AppCompatActivity {
 

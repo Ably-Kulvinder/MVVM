@@ -1,4 +1,4 @@
-package com.journaldev.androidmvvmdatabindinglivedata.ServerUtils;
+package com.mvvm.skelton.ServerUtils;
 
 import android.databinding.BindingAdapter;
 import android.support.v7.widget.RecyclerView;

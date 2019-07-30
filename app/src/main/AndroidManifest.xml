@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.journaldev.androidmvvmdatabindinglivedata">
+          package="com.mvvm.skelton">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.journaldev.androidmvvmdatabindinglivedata.Activities.ContentActivity"
+            android:name="com.mvvm.skelton.Activities.ContentActivity"
             >
         </activity>
-        <activity android:name="com.journaldev.androidmvvmdatabindinglivedata.Activities.MainActivity">
+        <activity android:name="com.mvvm.skelton.Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

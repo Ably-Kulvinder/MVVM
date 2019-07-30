@@ -9,7 +9,7 @@
 
         <variable
             name="usersListAdapter"
-            type="com.journaldev.androidmvvmdatabindinglivedata.adapters.UsersListAdapter"/>
+            type="com.mvvm.skelton.adapters.UsersListAdapter"/>
     </data>
 
     <LinearLayout

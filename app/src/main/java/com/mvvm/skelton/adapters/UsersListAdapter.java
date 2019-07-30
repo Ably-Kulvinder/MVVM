@@ -1,4 +1,4 @@
-package com.journaldev.androidmvvmdatabindinglivedata.adapters;
+package com.mvvm.skelton.adapters;
 
 import android.databinding.DataBindingUtil;
 import android.support.annotation.NonNull;
@@ -6,9 +6,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.journaldev.androidmvvmdatabindinglivedata.R;
-import com.journaldev.androidmvvmdatabindinglivedata.databinding.ListItemUsersBinding;
-import com.journaldev.androidmvvmdatabindinglivedata.usersListController.UsersList;
+import com.mvvm.skelton.R;
+import com.mvvm.skelton.databinding.ListItemUsersBinding;
+import com.mvvm.skelton.usersListController.UsersList;
 
 import java.util.List;
 

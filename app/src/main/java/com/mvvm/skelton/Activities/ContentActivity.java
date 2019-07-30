@@ -1,14 +1,14 @@
-package com.journaldev.androidmvvmdatabindinglivedata.Activities;
+package com.mvvm.skelton.Activities;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.journaldev.androidmvvmdatabindinglivedata.R;
-import com.journaldev.androidmvvmdatabindinglivedata.adapters.UsersListAdapter;
-import com.journaldev.androidmvvmdatabindinglivedata.databinding.ContentContentBinding;
-import com.journaldev.androidmvvmdatabindinglivedata.usersListController.UsersListViewModel;
+import com.mvvm.skelton.R;
+import com.mvvm.skelton.adapters.UsersListAdapter;
+import com.mvvm.skelton.databinding.ContentContentBinding;
+import com.mvvm.skelton.usersListController.UsersListViewModel;
 
 public class ContentActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.journaldev.androidmvvmdatabindinglivedata.usersListController;
+package com.mvvm.skelton.usersListController;
 
 /**
  * Created by AblySoft Pvt Ltd. on 17/7/19.

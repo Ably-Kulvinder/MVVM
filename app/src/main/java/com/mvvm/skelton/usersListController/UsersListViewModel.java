@@ -1,12 +1,12 @@
-package com.journaldev.androidmvvmdatabindinglivedata.usersListController;
+package com.mvvm.skelton.usersListController;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.arch.lifecycle.ViewModel;
 import android.util.Log;
 
-import com.journaldev.androidmvvmdatabindinglivedata.ServerUtils.Repository;
-import com.journaldev.androidmvvmdatabindinglivedata.ServerUtils.ResponseHandler;
+import com.mvvm.skelton.ServerUtils.Repository;
+import com.mvvm.skelton.ServerUtils.ResponseHandler;
 
 import retrofit2.Response;
 

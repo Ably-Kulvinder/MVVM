@@ -1,4 +1,4 @@
-package com.journaldev.androidmvvmdatabindinglivedata.ServerUtils;
+package com.mvvm.skelton.ServerUtils;
 
 import retrofit2.Response;
 

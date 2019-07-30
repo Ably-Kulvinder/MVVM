@@ -1,12 +1,12 @@
-package com.journaldev.androidmvvmdatabindinglivedata.loginController;
+package com.mvvm.skelton.loginController;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 
-import com.journaldev.androidmvvmdatabindinglivedata.ServerUtils.BaseModel;
-import com.journaldev.androidmvvmdatabindinglivedata.ServerUtils.Repository;
-import com.journaldev.androidmvvmdatabindinglivedata.ServerUtils.ResponseHandler;
-import com.journaldev.androidmvvmdatabindinglivedata.common.MyResponse;
+import com.mvvm.skelton.ServerUtils.BaseModel;
+import com.mvvm.skelton.ServerUtils.Repository;
+import com.mvvm.skelton.ServerUtils.ResponseHandler;
+import com.mvvm.skelton.common.MyResponse;
 
 import retrofit2.Response;
 
@@ -20,8 +20,8 @@ public class LoginViewModel extends BaseModel{
     }
 
     public void onLoginClicked() {
-      //  email.setValue("eve.holt@reqres.in");
-      //  password.setValue("acityslicka");
+         email.setValue("eve.holt@reqres.in");
+       password.setValue("acityslicka");
 
          Repository.getInstance().login(1, email.getValue(), password.getValue(), new ResponseHandler() {
 

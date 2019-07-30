@@ -1,8 +1,8 @@
-package com.journaldev.androidmvvmdatabindinglivedata.ServerUtils;
+package com.mvvm.skelton.ServerUtils;
 
 
-import com.journaldev.androidmvvmdatabindinglivedata.loginController.User;
-import com.journaldev.androidmvvmdatabindinglivedata.usersListController.UsersList;
+import com.mvvm.skelton.loginController.User;
+import com.mvvm.skelton.usersListController.UsersList;
 
 import retrofit2.Call;
 import retrofit2.Callback;

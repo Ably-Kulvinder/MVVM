@@ -1,4 +1,4 @@
-package com.journaldev.androidmvvmdatabindinglivedata.loginController;
+package com.mvvm.skelton.loginController;
 
 
 import android.util.Patterns;
