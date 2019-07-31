@@ -15,6 +15,8 @@ public class MyResponse<T>   {
     @Nullable
     public Exception error;
 
+    public boolean isLoading;
+
     public MyResponse(int tag, @android.support.annotation.NonNull T data) {
         this.tag = tag;
         this.data = data;
@@ -23,6 +25,10 @@ public class MyResponse<T>   {
     public MyResponse(int tag,Exception error) {
         this.tag = tag;
         this.error = error;
+    }
+    public MyResponse(int tag,boolean isLoading) {
+        this.tag = tag;
+        this.isLoading = isLoading;
     }
 
 
