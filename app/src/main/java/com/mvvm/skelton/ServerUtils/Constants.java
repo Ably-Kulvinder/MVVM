@@ -5,9 +5,11 @@ package com.mvvm.skelton.ServerUtils;
  */
 public class Constants {
     public static final String BASE_URL = "https://reqres.in";
-    public enum Status {
+    public enum Status
+
+    {
         LOADING,
-        SUCCESS,
-        ERROR
+                SUCCESS,
+                ERROR
     }
 }

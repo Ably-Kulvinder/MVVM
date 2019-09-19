@@ -2,18 +2,22 @@ package com.mvvm.skelton.Activities;
 
 import android.annotation.SuppressLint;
 import android.graphics.drawable.ColorDrawable;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
+
 import com.mvvm.skelton.R;
+
 import java.util.Objects;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Created by AblySoft Pvt Ltd. on 31/7/19.
  */
 public class BaseActivity extends AppCompatActivity {
     private AlertDialog LoadingDialog;
+
     public void showProgress(boolean isCancelable) {
         if (isFinishing()) return;
 
@@ -34,6 +38,7 @@ public class BaseActivity extends AppCompatActivity {
         }
 
     }
+
     public void hideProgress() {
         try {
             if (!isFinishing()) {

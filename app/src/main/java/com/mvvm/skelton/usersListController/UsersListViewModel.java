@@ -1,13 +1,13 @@
 package com.mvvm.skelton.usersListController;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
-import android.arch.lifecycle.ViewModel;
 import android.util.Log;
 
 import com.mvvm.skelton.ServerUtils.Repository;
 import com.mvvm.skelton.ServerUtils.ResponseHandler;
 
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
 import retrofit2.Response;
 
 
@@ -20,12 +20,13 @@ public class UsersListViewModel extends ViewModel {
 
     public void getUsers() {
 
-         Repository.getInstance().getUsersList(1 , new ResponseHandler() {
+        Repository.getInstance().getUsersList(1, new ResponseHandler() {
             @Override
             public void onSuccess(int tag, Response response) {
                 usersList.setValue((UsersList) response.body());
             }
-             @Override
+
+            @Override
             public void onFailur(Exception t) {
                 Log.d("", "onFailure: ");
             }

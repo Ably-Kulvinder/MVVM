@@ -6,10 +6,10 @@ import android.util.Patterns;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class User  {
+public class User {
 
-      public String mEmail ;
-      public String mPassword ;
+    public String mEmail;
+    public String mPassword;
 
     @SerializedName("token")
     @Expose
@@ -25,7 +25,7 @@ public class User  {
     }
 
     public boolean isEmailValid() {
-        return Patterns.EMAIL_ADDRESS.matcher(getEmail() ).matches();
+        return Patterns.EMAIL_ADDRESS.matcher(getEmail()).matches();
     }
 
     public String getEmail() {
@@ -37,7 +37,7 @@ public class User  {
     }
 
     public boolean isPasswordLengthGreaterThan5() {
-        return getPassword() .length() > 5;
+        return getPassword().length() > 5;
     }
 
     public String getPassword() {
@@ -64,7 +64,6 @@ public class User  {
     public void setError(String error) {
         this.error = error;
     }
-
 
 
 }

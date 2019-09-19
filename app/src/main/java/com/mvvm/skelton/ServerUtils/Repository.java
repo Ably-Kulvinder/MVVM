@@ -29,9 +29,9 @@ public class Repository {
         return holder;
     }
 
-    public  void login(final int i, String userName, String Password, final ResponseHandler listner) {
-        assert apiInterface != null;
-        Call<User> call1 = apiInterface.login(userName,Password);
+    public void login(final int i, String userName, String Password, final ResponseHandler listner) {
+        assert apiInterface !=null;
+        Call<User> call1 = apiInterface.login(userName, Password);
         call1.enqueue(new Callback<User>() {
             @Override
             public void onResponse(Call<User> call, Response<User> response) {
@@ -46,7 +46,7 @@ public class Repository {
 
 
             @Override
-            public void onFailure(  Call<User> call, Throwable t) {
+            public void onFailure(Call<User> call, Throwable t) {
                 call.cancel();
                 if (listner != null)
                     listner.onFailur(new Exception(t.getLocalizedMessage()));
@@ -55,8 +55,9 @@ public class Repository {
         });
 
     }
-    public  void getUsersList (final int i, ResponseHandler listner) {
-        assert apiInterface != null;
+
+    public void getUsersList(final int i, ResponseHandler listner) {
+        assert apiInterface !=null;
         Call<UsersList> call1 = apiInterface.getUsers();
         call1.enqueue(new Callback<UsersList>() {
             @Override
@@ -71,7 +72,7 @@ public class Repository {
             }
 
             @Override
-            public void onFailure(  Call<UsersList> call, Throwable t) {
+            public void onFailure(Call<UsersList> call, Throwable t) {
                 call.cancel();
                 if (listner != null)
                     listner.onFailur(new Exception(t.getLocalizedMessage()));

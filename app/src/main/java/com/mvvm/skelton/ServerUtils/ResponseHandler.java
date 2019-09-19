@@ -9,6 +9,7 @@ import retrofit2.Response;
 
 public interface ResponseHandler {
 
-     void onSuccess(int tag, Response response);
-     void onFailur(Exception t);
+    void onSuccess(int tag, Response response);
+
+    void onFailur(Exception t);
 }

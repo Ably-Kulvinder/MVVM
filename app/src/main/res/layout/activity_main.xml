@@ -19,7 +19,7 @@
             android:layout_margin="8dp"
             android:orientation="vertical">
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/inEmailLL"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -36,9 +36,9 @@
                     android:onTextChanged="@{loginViewModel.onTextChanged}"
                     android:text="@={loginViewModel.email}" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:errorText="@{loginViewModel.passwordError}"
@@ -54,7 +54,7 @@
                     android:onTextChanged="@{loginViewModel.onTextChanged}"
                     android:text="@={loginViewModel.password}" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/button"

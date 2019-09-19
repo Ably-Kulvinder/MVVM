@@ -1,8 +1,7 @@
 package com.mvvm.skelton.Activities;
 
-import android.arch.lifecycle.ViewModelProviders;
+
 import android.content.Intent;
-import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -11,12 +10,15 @@ import com.mvvm.skelton.databinding.ActivityMainBinding;
 import com.mvvm.skelton.loginController.LoginViewModel;
 import com.mvvm.skelton.loginController.User;
 
+import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.ViewModelProviders;
+
 public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // Thread.setDefaultUncaughtExceptionHandler(new ForceCloseHandler(this));
+        // Thread.setDefaultUncaughtExceptionHandler(new ForceCloseHandler(this));
 
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         LoginViewModel loginViewModel = ViewModelProviders.of(this).get(LoginViewModel.class);

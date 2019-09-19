@@ -5,10 +5,10 @@ package com.mvvm.skelton.common;
  */
 public class BaseResponse<T> {
 
-    private T  items ;
+    private T items;
 
-    public void BaseResponse(T item){
-        items=item;
+    public void BaseResponse(T item) {
+        items = item;
     }
 
 }

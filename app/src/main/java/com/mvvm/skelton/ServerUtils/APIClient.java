@@ -22,14 +22,14 @@ class APIClient {
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         Interceptor intercept = chain -> {
-            Request request = chain.request().newBuilder().header("X-TOKEN","QpwL5tke4Pnpja7X4")
+            Request request = chain.request().newBuilder().header("X-TOKEN", "QpwL5tke4Pnpja7X4")
                     .header("X-USER-TYPE", "1").build();
             return chain.proceed(request);
         };
 
         OkHttpClient client = enableTls12OnPreLollipop(new OkHttpClient.Builder().connectTimeout(30, TimeUnit.SECONDS)
                 .writeTimeout(30, TimeUnit.SECONDS)
-                .readTimeout(300, TimeUnit.SECONDS). addInterceptor(intercept).addInterceptor(interceptor));
+                .readTimeout(300, TimeUnit.SECONDS).addInterceptor(intercept).addInterceptor(interceptor));
 
 
         return new Retrofit.Builder()

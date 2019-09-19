@@ -1,6 +1,7 @@
 package com.mvvm.skelton.ServerUtils;
 
-import android.arch.lifecycle.ViewModel;
+
+import androidx.lifecycle.ViewModel;
 
 /**
  * Created by AblySoft Pvt Ltd. on 18/7/19.

@@ -1,14 +1,14 @@
 package com.mvvm.skelton.loginController;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
-import android.databinding.ObservableField;
 
 import com.mvvm.skelton.ServerUtils.BaseModel;
 import com.mvvm.skelton.ServerUtils.Repository;
 import com.mvvm.skelton.ServerUtils.ResponseHandler;
 import com.mvvm.skelton.common.MyResponse;
 
+import androidx.databinding.ObservableField;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import retrofit2.Response;
 
 
@@ -24,8 +24,8 @@ public class LoginViewModel extends BaseModel {
     }
 
     public void onLoginClicked() {
-       //email.setValue("eve.holt@reqres.in");
-      //password.setValue("acityslicka");
+        //email.setValue("eve.holt@reqres.in");
+        //password.setValue("acityslicka");
         if (!isValidCredential())
             return;
         loginData.setValue(new MyResponse(1, true));
@@ -51,7 +51,7 @@ public class LoginViewModel extends BaseModel {
         if (email.getValue() == null || email.getValue().toString().length() <= 5) {
             emailError.set("email length too short");
             return false;
-        } else{
+        } else {
             emailError.set(null);
         }
         if (password.getValue() == null || password.getValue().toString().length() <= 5) {
