@@ -22,6 +22,10 @@ import static android.content.ContentValues.TAG;
  */
 public class DataUtils {
 
+    public static String showUppercase(String text){
+        return text.toUpperCase().concat("   **   ");
+    }
+
 
     @BindingAdapter({"imageUrl"})
     public static void loadImage(ImageView imageView, String url) {

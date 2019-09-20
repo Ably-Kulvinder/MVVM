@@ -23,8 +23,6 @@ public class MainActivity extends BaseActivity {
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         LoginViewModel loginViewModel = ViewModelProviders.of(this).get(LoginViewModel.class);
         binding.setLoginViewModel(loginViewModel);
-
-
         loginViewModel.getUser().observe(this, user -> {
 
             if (user.isLoading) {

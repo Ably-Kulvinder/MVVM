@@ -6,7 +6,9 @@ import android.util.Patterns;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class User {
+import androidx.lifecycle.LiveData;
+
+public class User extends LiveData {
 
     public String mEmail;
     public String mPassword;

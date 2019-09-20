@@ -25,11 +25,11 @@ public class ContentActivity extends AppCompatActivity {
         usersViewModel.getUser().observe(this, user -> {
 
             UsersListAdapter myRecyclerViewAdapter = new UsersListAdapter(user.getData());
+            binding.setUsersListAdapter(myRecyclerViewAdapter);
+
         /*   binding.myRecyclerView.setLayoutManager(new LinearLayoutManager(this));
              binding.myRecyclerView.addItemDecoration(
              new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));*/
-
-            binding.setUsersListAdapter(myRecyclerViewAdapter);
             // binding.executePendingBindings();
 
         });

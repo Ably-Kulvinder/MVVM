@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">ablysoft MVVM</string>
+    <string name="app_name">ablysoft DataBinding</string>
     <string name="title_activity_content">ContentActivity</string>
 </resources>
