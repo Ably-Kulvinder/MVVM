@@ -1,6 +1,5 @@
 package com.mvvm.skelton.loginController;
 
-
 import com.mvvm.skelton.ServerUtils.BaseModel;
 import com.mvvm.skelton.ServerUtils.Repository;
 import com.mvvm.skelton.ServerUtils.ResponseHandler;
@@ -17,6 +16,7 @@ public class LoginViewModel extends BaseModel {
 
     public ObservableField<String> emailError = new ObservableField<>();
     public ObservableField<String> passwordError = new ObservableField<>();
+
     private MutableLiveData<MyResponse> loginData = new MutableLiveData<>();
 
     public LoginViewModel() {

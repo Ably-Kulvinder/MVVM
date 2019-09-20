@@ -7,7 +7,6 @@ import com.mvvm.skelton.R;
 import com.mvvm.skelton.adapters.UsersListAdapter;
 import com.mvvm.skelton.databinding.ContentContentBinding;
 import com.mvvm.skelton.usersListController.UsersListViewModel;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.lifecycle.ViewModelProviders;

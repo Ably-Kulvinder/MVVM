@@ -1,19 +1,14 @@
 package com.mvvm.skelton.adapters;
 
-
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-
 import com.mvvm.skelton.R;
 import com.mvvm.skelton.databinding.ListItemUsersBinding;
 import com.mvvm.skelton.usersListController.UsersList;
-
 import java.util.List;
-
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
-
 
 /**
  * Created by AblySoft Pvt Ltd. on 20/2/18.

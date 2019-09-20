@@ -1,10 +1,8 @@
 package com.mvvm.skelton.usersListController;
 
 import android.util.Log;
-
 import com.mvvm.skelton.ServerUtils.Repository;
 import com.mvvm.skelton.ServerUtils.ResponseHandler;
-
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;

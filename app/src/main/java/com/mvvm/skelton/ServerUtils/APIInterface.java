@@ -16,14 +16,12 @@ import retrofit2.http.POST;
 
 interface APIInterface {
 
-
     @FormUrlEncoded
     @POST("/api/login")
     Call<User> login(@Field("email") String email, @Field("password") String password);
 
     @GET("/api/users?page=2")
     Call<UsersList> getUsers();
-
 
 }
 
